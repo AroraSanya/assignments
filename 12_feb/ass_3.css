@@ -1,0 +1,39 @@
+.swap_ele
+{
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+}
+.list , .swap
+ {
+    background-color: rgb(158, 97, 145);
+    border: 8px solid black;
+    height: 200px;
+    width: 40%;
+    margin: 10px;
+    text-align: center;
+}
+.append {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 20px;
+    color: rgb(51, 10, 56);
+    text-align: center;
+    border-radius: 8px;
+    font-size: 21px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    background-color:rgb(158, 97, 145);
+    margin: 15px;
+}
+
+.prepend {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 20px;
+    color: rgb(51, 10, 56);
+    text-align: center;
+    border-radius: 8px;
+    font-size: 21px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    background-color: rgb(158, 97, 145);
+}
