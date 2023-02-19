@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Example Form</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        margin-bottom: 1rem;
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #357a38;
+      }
+
+      fieldset  div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .btn-reset, .btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  .btn-reset:hover, .btn-submit:hover {
+    background-color: #3e8e41;
+  }
+
+  .btn-reset:focus, .btn-submit:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #7fb3d5;
+  }
+  header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+
+      header a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      header a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+<header>
+      <a href="https://www.netsolutions.com/">NET SOLUTIONS</a>
+        <a class='table' href="table1.html">Tables</a>
+        <a  class='table'href="accordin.html">Accordin</a>
+</header>  
+
+    <form id="my-form" action="#" method="post">
+        <section>
+            <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required aria-label="Enter your name" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required aria-label="Enter your email" />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required aria-label="Enter your message"></textarea>
+
+      <input type="submit" value="Send" />
+
+      <fieldset>
+        <legend>Gender:</legend>
+        <div>
+          <input type="radio" id="male" name="gender" value="male" required  />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" value="female" required  />
+          <label for="female">Female</label>
+        </div>
+        <div>
+          <input type="radio" id="other" name="gender" value="other" required  />
+          <label for="other">Other</label>
+        </div>
+      </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Interest:</legend>
+                <div>
+                    <label for="interest">Sports</label>
+                    <input type="checkbox" id="sports" name="sports" aria-label="Sports" />
+                    
+                </div>
+                <div>
+                    <label for="interest">Debate</label>
+                    <input type="checkbox" id="debate" name="debate" aria-label="debate" />
+                    
+                </div>
+                <div>
+                    <label for="interest">Reading Books</label>
+                    <input type="checkbox" id="books" name="books" aria-label="Reading books" />
+                    
+                </div>
+              </fieldset>
+        </section>
+        <section>
+            <button type="reset" class="btn-reset" aria-label="Clear the form">Clear</button>
+           <button type="submit" id="submit-btn" class="btn-submit" aria-label="Submit the form">Submit</button>
+        </section>
+      
+    </form>    
+  </body>
+  
+</html>
